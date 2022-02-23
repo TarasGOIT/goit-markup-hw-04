@@ -61,6 +61,11 @@ body {
 section {
   display: block;
 }
+
+img {
+  display: block;
+}
+
 /* Шапка сайта */
 
 .header {
@@ -192,9 +197,13 @@ section {
 
 /* Секция герой */
 .hero {
-  background-color: rgba(47, 48, 58, 1);
   padding: 200px 0px;
   text-align: center;
+
+  background-image: url(../images/Backgrounds/bcghero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(47, 48, 58, 1);
 }
 
 .hero-title {
