@@ -153,6 +153,20 @@ img {
   margin-left: auto;
 }
 
+.contacts-row .list {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-row .item {
+  text-align: center;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+
 .header-link-txt:hover,
 .header-link-txt:focus {
   color: var(--accent-color);
@@ -199,11 +213,18 @@ img {
 .hero {
   padding: 200px 0px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: url(../images/Backgrounds/bcghero.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Backgrounds/bcghero.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: rgba(47, 48, 58, 1);
+
+  max-width: 1600px;
+  height: 600px;
 }
 
 .hero-title {
@@ -221,7 +242,7 @@ img {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  margin-top: 40px;
+  margin-top: 30px;
 
   font-family: var(--main-font);
   font-style: normal;
@@ -238,6 +259,7 @@ img {
 
 .feature {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-list {
@@ -245,8 +267,6 @@ img {
 }
 
 .feature-item {
-  width: 270px;
-  height: 101px;
   margin-right: 30px;
 }
 
@@ -277,11 +297,24 @@ img {
   color: var(--main-color);
 }
 
-/* Секция Чем мы занимаемся */
-
-.occupation {
-  padding: 94px 0;
+.feature-logo {
+  width: 70px;
+  height: 70px;
 }
+
+.feature-container {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: rgba(245, 244, 250, 1);
+}
+
+/* Секция Чем мы занимаемся */
 
 .occupation-title {
   text-align: center;
