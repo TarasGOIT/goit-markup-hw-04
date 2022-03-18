@@ -395,6 +395,20 @@ img {
   color: var(--main-color);
 }
 
+employee-list-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.employee-item-nav {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
 /* Портфолио */
 
 .nav-port {
