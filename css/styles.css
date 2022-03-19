@@ -242,6 +242,7 @@ img {
   width: 200px;
   height: 50px;
   border-radius: 4px;
+  border: rgba(255, 255, 255, 0);
   margin-top: 30px;
 
   font-family: var(--main-font);
@@ -359,6 +360,9 @@ img {
 
 .employee-item {
   background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .employee-item:nth-child(n + 2) {
@@ -395,12 +399,13 @@ img {
   color: var(--main-color);
 }
 
-employee-list-nav {
+.employee-list-nav {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 
-.employee-item-nav {
+.employee-link-nav {
   width: 44px;
   height: 44px;
   display: flex;
@@ -408,7 +413,70 @@ employee-list-nav {
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  fill: rgba(175, 177, 184, 1);
 }
+
+.employee-link-nav:hover,
+.employee-link-nav:focus {
+  background-color: rgba(33, 150, 243, 1);
+  fill: #ffffff;
+}
+
+.employee-item-nav:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Постоянные клиенты */
+
+.customer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customer-title {
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.customer-list {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.customer-item {
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+
+  fill: rgba(175, 177, 184, 1);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
+}
+
 /* Портфолио */
 
 .nav-port {
@@ -524,6 +592,8 @@ employee-list-nav {
 
 .footer-list {
   margin-top: 20px;
+  display: block;
+  width: 231px;
 }
 
 .footer-item {
@@ -574,4 +644,15 @@ employee-list-nav {
 .footer-link-phone:hover,
 .footer-link-phone:focus {
   color: var(--accent-color);
+}
+
+.footer-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
