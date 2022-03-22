@@ -520,6 +520,8 @@ img {
 .nav-button:focus {
   color: var(--title-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .services-list {
@@ -528,9 +530,14 @@ img {
   margin-top: 50px;
 }
 
+.services-link {
+  display: block;
+}
+
 .services-item {
   margin-right: 30px;
   margin-bottom: 30px;
+
 }
 
 .services-item:nth-child(3n + 3) {
@@ -539,6 +546,12 @@ img {
 
 .services-item:nth-child(n + 7) {
   margin-bottom: 0;
+}
+
+.services-item:hover,
+.services-item:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .services-box {
@@ -652,7 +665,48 @@ img {
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-block {
+  margin-left: 70px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+}
+
+.footer-block-list {
+  display: flex;
+}
+
+.footer-link-nav {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
+}
+
+.footer-link-nav:hover,
+.footer-link-nav:focus {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.footer-link-nav:active {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.footer-item-nav:not(:last-child) {
+  margin-right: 10px;
 }
