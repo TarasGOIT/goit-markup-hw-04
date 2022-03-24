@@ -173,9 +173,12 @@ img {
 }
 
 .header-mail {
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-right: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+
 
   font-family: var(--main-font);
   color: var(--main-color);
@@ -192,8 +195,10 @@ img {
 }
 
 .header-phone {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
 
   font-family: var(--main-font);
   color: var(--main-color);
@@ -204,10 +209,32 @@ img {
   letter-spacing: 0.02em;
 }
 
+.icon-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .header-phone:hover,
 .header-phone:focus {
   color: var(--accent-color);
 }
+
+.header-list-box {
+  display: flex;
+  align-items: center;
+}
+
+.header-item-box:not(:last-child) {
+  margin-right: 20px;
+
+}
+
+
 
 /* Секция герой */
 .hero {
