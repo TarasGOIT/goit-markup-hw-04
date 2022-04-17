@@ -69,8 +69,6 @@ img {
 /* Шапка сайта */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
 
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -84,8 +82,11 @@ img {
   display: flex;
 }
 
+.header-item link {
+  display: block
+}
+
 .header-nav {
-  display: flex;
   margin-left: 93px;
 }
 
@@ -96,14 +97,11 @@ img {
   margin-right: 0;
 }
 
-.header-link-txt {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
 .header-link {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-logo {
@@ -173,8 +171,8 @@ img {
 }
 
 .header-mail {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 50px;
   display: flex;
   align-items: center;
@@ -195,8 +193,8 @@ img {
 }
 
 .header-phone {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
 
